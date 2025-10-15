@@ -1,0 +1,35 @@
+site_name: Портфолио проекта «Имя ребёнку»
+site_description: Персональный сайт проекта подбора благозвучных имён (ИТМО, ФТМИ)
+site_author: Нохрин Валерий Витальевич
+site_url: https://valeriinohrin.github.io/portfolio-nohrin/
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+
+nav:
+  - Главная: index.md
+  - Обо мне: about.md
+  - Проекты: projects.md
+  - Контакты: contacts.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+
+extra_css:
+  - styles/extra.css
+

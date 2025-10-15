@@ -1,0 +1,19 @@
+:root {
+  --md-text-font: system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans";
+}
+
+.md-grid {
+  max-width: 980px; /* ограничивает ширину сайта, чтобы было аккуратно */
+}
+
+.md-typeset p {
+  line-height: 1.7; /* расстояние между строками — чтобы читалось проще */
+}
+
+.md-typeset h1, .md-typeset h2 {
+  letter-spacing: 0.2px; /* немного воздуха между буквами в заголовках */
+}
+
+.md-footer {
+  border-top: 1px solid #eee; /* тонкая линия сверху футера */
+}
