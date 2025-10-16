@@ -1,89 +1,19 @@
-body {
-  font-family: "Roboto", "Segoe UI", sans-serif;
-  background: #fdfdfd;
-  color: #222;
-  line-height: 1.7;
-  font-size: 17px;
-  padding-top: 20px;
-}
+/* Чистый фон и спокойные цвета */
+body { background:#fff; background-image:none !important; color:#1f2937; line-height:1.7; }
 
-h1, h2, h3 {
-  color: #003366;
-  font-weight: 600;
-}
+/* Ссылки без ядовитости */
+a { color:#2563eb; }
+a:hover { color:#1d4ed8; text-decoration:underline; }
 
-h1 {
-  border-bottom: 2px solid #0077cc;
-  padding-bottom: 6px;
-  margin-bottom: 20px;
-}
+/* Светлая шапка */
+.navbar-inverse { background:#f8f9fa; border-color:#e5e7eb; }
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a { color:#1f2937; }
 
-a {
-  color: #0077cc;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
+/* Спрятать кнопки Next/Prev и футер MkDocs */
+.btn[rel="prev"], .btn[rel="next"] { display:none !important; }
+footer, .footer { display:none !important; }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 15px;
-}
-
-table th {
-  background: #0077cc;
-  color: white;
-  padding: 10px;
-  text-align: left;
-}
-
-table td {
-  border: 1px solid #ddd;
-  padding: 10px;
-}
-
-table tr:nth-child(even) {
-  background: #f8f9fa;
-}
-
-blockquote {
-  border-left: 4px solid #0077cc;
-  background: #f0f8ff;
-  padding: 10px 15px;
-  margin: 15px 0;
-  color: #333;
-  font-style: italic;
-}
-
-img {
-  display: block;
-  margin: 20px auto;
-  border-radius: 10px;
-  max-width: 100%;
-}
-
-ul, ol {
-  margin-left: 25px;
-}
-
-.md-nav__item a {
-  font-weight: 500;
-}
-.md-nav__item a:hover {
-  color: #0055aa;
-}
-
-@media (max-width: 768px) {
-  body {
-    font-size: 15px;
-  }
-  h1 {
-    font-size: 22px;
-  }
-  h2 {
-    font-size: 18px;
-  }
-}
-}
+/* Заголовки и ширина контейнера */
+h1 { border-bottom:1px solid #e5e7eb; padding-bottom:6px; }
+.container { max-width:980px; }
