@@ -1,31 +1,29 @@
-/* Чистый фон, без сетки */
-body { background:#fff !important; background-image:none !important; color:#1f2937; line-height:1.7; }
+/* Убрать фон-сетку у темы mkdocs */
+html, body {
+  background: #fff !important;
+  background-image: none !important;
+}
 
-/* Ссылки спокойные */
-a { color:#2563eb; }
-a:hover { color:#1d4ed8; text-decoration:underline; }
+/* Скрыть "Previous" и "Next" в правом верхнем углу */
+a[rel="prev"], a[rel="next"] {
+  display: none !important;
+}
 
-/* Светлая шапка */
-.navbar-inverse { background:#f8f9fa; border-color:#e5e7eb; }
-.navbar-inverse .navbar-brand,
-.navbar-inverse .navbar-nav>li>a { color:#1f2937; }
+/* Нормальный вес шрифта для основного текста */
+body, p, li {
+  font-weight: 400 !important;
+}
 
-/* Убрать Prev / Next вверху */
-.navbar .btn[rel="prev"],
-.navbar .btn[rel="next"] { display:none !important; }
+/* Заголовки оставляем выразительными, но без "жирного по глазам" */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600 !important;
+}
 
-/* Убрать футер "Built with MkDocs" */
-.bs-footer, footer, .footer { display:none !important; }
-
-/* Заголовки оставляем выразительными, обычный текст — без жирного */
-h1, h2, h3 { font-weight:600; border-bottom:1px solid #e5e7eb; padding-bottom:6px; }
-strong, b { font-weight:500 !important; }        /* можно поставить 400, если хочешь совсем без жирного */
-
-/* Нормализуем списки/таблицы */
-table { border-collapse:collapse; width:100%; }
-th { background:#f3f4f6; text-align:left; padding:10px; }
-td { border:1px solid #e5e7eb; padding:10px; }
-tr:nth-child(even) td { background:#fafafa; }
-
-/* Немного уже контент — читается приятнее */
-.container { max-width:980px; }
+/* Линки попроще и чище */
+a {
+  color: #0b73c8;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
