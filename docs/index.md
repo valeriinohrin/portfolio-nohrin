@@ -10,10 +10,10 @@
 ---
 
 ## Разделы сайта:
-1. [О проекте](about.md)
-2. [Проекты и развитие](projects.md)
-3. [Достижения](achivments.md)
-4. [Резюме](resume.md)
+1. [Обо мне](about-me.md)  
+2. [Проект и развитие](projects.md)  
+3. [Достижения](achivments.md)  
+4. [Резюме](resume.md)  
 5. [Контакты](contacts.md)
 
 ---
