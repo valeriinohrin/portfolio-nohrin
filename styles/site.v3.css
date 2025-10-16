@@ -1,3 +1,23 @@
+/* Скрыть пункты верхнего меню (Главная, О проекте, Проекты, ...) */
+.navbar-nav { display: none; }
+
+/* Бренд в шапке — как простой заголовок, без клика */
+.navbar-brand {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+.navbar-brand:hover { color: inherit; }
+
+/* На главной прячем левый сайдбар и растягиваем контент */
+body.homepage .bs-sidebar { display: none; }
+
+/* mkdocs-тема: контент обычно в .col-md-9, растянем */
+body.homepage .col-md-9 { width: 100%; }
+
+/* На всякий случай – уберём правые отступы, если сетка мешает */
+body.homepage .row .col-md-9 { float: none; }
+
 /* Убрать фон-сетку у темы mkdocs */
 html, body {
   background: #fff !important;
@@ -27,3 +47,4 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
