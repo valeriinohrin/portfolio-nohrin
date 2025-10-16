@@ -16,11 +16,12 @@ theme:
 
 nav:
   - Главная: index.md
-  - О проекте: about.md
-  - Проекты: projects.md
+  - Обо мне: about-me.md
+  - Проект: projects.md
   - Достижения: achivments.md
   - Резюме: resume.md
   - Контакты: contacts.md
+
 
 extra_css:
   - styles/site.v3.css
