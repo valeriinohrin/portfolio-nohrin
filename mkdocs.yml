@@ -23,4 +23,4 @@ nav:
   - Контакты: contacts.md
 
 extra_css:
-  - styles/extra.css
+  - styles/site.v2.css
