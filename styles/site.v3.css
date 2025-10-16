@@ -1,50 +1,27 @@
-/* Скрыть пункты верхнего меню (Главная, О проекте, Проекты, ...) */
-.navbar-nav { display: none; }
-
+/* --- ШАПКА --- */
 /* Бренд в шапке — как простой заголовок, без клика */
-.navbar-brand {
+.navbar-brand{
   pointer-events: none;
   cursor: default;
   text-decoration: none;
 }
-.navbar-brand:hover { color: inherit; }
+.navbar-brand:hover{ color: inherit; }
 
-/* На главной прячем левый сайдбар и растягиваем контент */
-body.homepage .bs-sidebar { display: none; }
+/* Оставляем верхнее меню видимым (на всякий случай) */
+.navbar-nav{ display:flex !important; }
 
-/* mkdocs-тема: контент обычно в .col-md-9, растянем */
-body.homepage .col-md-9 { width: 100%; }
+/* Скрыть стрелки «Previous/Next» справа вверху */
+a[rel="prev"], a[rel="next"]{ display:none !important; }
 
-/* На всякий случай – уберём правые отступы, если сетка мешает */
-body.homepage .row .col-md-9 { float: none; }
+/* --- ГЛАВНАЯ СТРАНИЦА --- */
+/* На главной прячем левый сайдбар, чтобы не дублировал список разделов */
+.homepage .bs-sidebar{ display:none; }
+/* И растягиваем контент на всю ширину центральной колонки */
+.homepage .col-md-9{ width:100%; float:none; }
 
-/* Убрать фон-сетку у темы mkdocs */
-html, body {
-  background: #fff !important;
-  background-image: none !important;
-}
-
-/* Скрыть "Previous" и "Next" в правом верхнем углу */
-a[rel="prev"], a[rel="next"] {
-  display: none !important;
-}
-
-/* Нормальный вес шрифта для основного текста */
-body, p, li {
-  font-weight: 400 !important;
-}
-
-/* Заголовки оставляем выразительными, но без "жирного по глазам" */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600 !important;
-}
-
-/* Линки попроще и чище */
-a {
-  color: #0b73c8;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
+/* --- ОБЩИЙ ТОН --- */
+html,body{ background:#fff !important; background-image:none !important; }
+body,p,li{ font-weight:400 !important; }                /* обычный вес текста */
+h1,h2,h3,h4,h5,h6{ font-weight:600 !important; }       /* заголовки выразительные */
+a{ color:#0b73c8; text-decoration:none; }
+a:hover{ text-decoration:underline; }
