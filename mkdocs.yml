@@ -4,32 +4,23 @@ site_author: Нохрин Валерий Витальевич
 site_url: https://valeriinohrin.github.io/portfolio-nohrin/
 
 theme:
-  name: material
+ name: mkdocs
   language: ru
-  features:
-    - navigation.tabs
-    - navigation.top
-    - content.code.copy
-    - search.suggest
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
+    scheme: default
+    primary: blue
+    accent: light blue
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 nav:
   - Главная: index.md
-  - Обо мне: about.md
+  - О проекте: about.md
   - Проекты: projects.md
+  - Достижения: achivments.md
+  - Резюме: resume.md
   - Контакты: contacts.md
-
-markdown_extensions:
-  - admonition
-  - tables
-  - toc:
-      permalink: true
-  - pymdownx.superfences
-  - pymdownx.highlight
 
 extra_css:
   - styles/extra.css
-
